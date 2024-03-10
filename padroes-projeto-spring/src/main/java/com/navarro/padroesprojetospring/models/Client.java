@@ -8,12 +8,18 @@ public class Client {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
-    private String nome;
+    private String name;
     @ManyToOne
-    private Address endereco;
+    private Address address;
 
     public Client() {
         super();
+    }
+
+    public Client(Long id, String name, Address address) {
+        this.id = id;
+        this.name = name;
+        this.address = address;
     }
 
     public Long getId() {
@@ -24,19 +30,19 @@ public class Client {
         this.id = id;
     }
 
-    public String getNome() {
-        return nome;
+    public String getName() {
+        return name;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public Address getEndereco() {
-        return endereco;
+    public Address getAddress() {
+        return address;
     }
 
-    public void setEndereco(Address endereco) {
-        this.endereco = endereco;
+    public void setAddress(Address address) {
+        this.address = address;
     }
 }
