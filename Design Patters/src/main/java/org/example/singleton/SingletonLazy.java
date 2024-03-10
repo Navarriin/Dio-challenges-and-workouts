@@ -1,4 +1,4 @@
-package org.example.singleton.semSpring;
+package org.example.singleton;
 import java.util.Objects;
 
 public class SingletonLazy {

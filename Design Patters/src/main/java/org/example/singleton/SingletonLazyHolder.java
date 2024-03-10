@@ -1,4 +1,4 @@
-package org.example.singleton.semSpring;
+package org.example.singleton;
 
 public class SingletonLazyHolder {
 

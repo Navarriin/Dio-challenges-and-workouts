@@ -1,9 +1,9 @@
 package org.example;
 
 import org.example.facade.Facade;
-import org.example.singleton.semSpring.SingletonEager;
-import org.example.singleton.semSpring.SingletonLazy;
-import org.example.singleton.semSpring.SingletonLazyHolder;
+import org.example.singleton.SingletonEager;
+import org.example.singleton.SingletonLazy;
+import org.example.singleton.SingletonLazyHolder;
 import org.example.strategy.*;
 
 public class Test {
