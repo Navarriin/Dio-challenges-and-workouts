@@ -1,4 +1,4 @@
-package org.example.singleton;
+package org.example.singleton.semSpring;
 
 public class SingletonEager {
     private static SingletonEager instance = new SingletonEager();
