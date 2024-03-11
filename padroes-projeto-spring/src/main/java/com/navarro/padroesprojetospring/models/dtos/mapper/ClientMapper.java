@@ -2,9 +2,11 @@ package com.navarro.padroesprojetospring.models.dtos.mapper;
 
 import com.navarro.padroesprojetospring.models.Client;
 import com.navarro.padroesprojetospring.models.dtos.ClientDTO;
+import org.springframework.stereotype.Component;
 
 import java.util.Objects;
 
+@Component
 public class ClientMapper {
 
     public ClientDTO toDto(Client client) {

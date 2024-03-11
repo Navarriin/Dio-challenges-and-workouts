@@ -1,13 +1,15 @@
 package com.navarro.padroesprojetospring.service;
 
-import com.navarro.padroesprojetospring.models.Client;
+import com.navarro.padroesprojetospring.models.dtos.ClientDTO;
+
+import java.util.List;
 
 public interface ClientService {
 
-    Iterable<Client> getAll();
-    Client getById(Long id);
-    Client createClient(Client body);
-    Client updateClient(Long id, Client body);
+    List<ClientDTO> getAll();
+    ClientDTO getById(Long id);
+    ClientDTO createClient(ClientDTO body);
+    ClientDTO updateClient(Long id, ClientDTO body);
     void deleteClient(Long id);
 
 }
