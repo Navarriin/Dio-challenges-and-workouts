@@ -1,5 +1,6 @@
 package com.navarro.padroesprojetospring.service.impl;
 
+import com.navarro.padroesprojetospring.exceptions.NotFoundException;
 import com.navarro.padroesprojetospring.models.Address;
 import com.navarro.padroesprojetospring.models.Client;
 import com.navarro.padroesprojetospring.models.dtos.ClientDTO;
@@ -47,7 +48,7 @@ public class ClientServiceImpl implements ClientService {
     public ClientDTO getById(Long id) {
         return clientMapper.toDto(
                 clientRepository.findById(id)
-                .orElseThrow(NoSuchFieldError::new));
+                .orElseThrow(() -> new NotFoundException("Client not found by id: " + id)));
     }
 
     @Override
@@ -63,14 +64,14 @@ public class ClientServiceImpl implements ClientService {
                   data.setName(body.name());
                   data.setAddress(cep.address());
                   return clientMapper.toDto(clientRepository.save(data));
-      }).orElseThrow(NullPointerException::new);
+      }).orElseThrow(() -> new NotFoundException("Client not found by id: " + id));
 
     }
 
     @Override
     public void deleteClient(Long id) {
         clientRepository.delete(clientRepository.findById(id)
-                .orElseThrow(() -> new NullPointerException()));
+                .orElseThrow(() -> new NotFoundException("Client not found by id: " + id)));
     }
 
     public ClientDTO saveClientWithCep(ClientDTO body) {
