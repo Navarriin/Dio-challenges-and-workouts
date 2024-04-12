@@ -59,7 +59,7 @@ public class ClientServiceImpl implements ClientService {
     @Override
     public ClientDTO updateClient(Long id, ClientDTO body) {
       return clientRepository.findById(id)
-              .map(data-> {
+              .map(data -> {
                   ClientDTO cep = saveClientWithCep(body);
                   data.setName(body.name());
                   data.setAddress(cep.address());
