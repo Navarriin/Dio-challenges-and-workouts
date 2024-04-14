@@ -30,7 +30,7 @@ class AvengerResource(
         .map { AvengerResponse.from(it) }
         .let { ResponseEntity.ok().body(it) }
 
-    @GetMapping("{id}")
+    @GetMapping("{id}/details")
     fun getHeroById(@PathVariable("id") id: Long): ResponseEntity<AvengerResponse> =
         repository.getHero(id)?.let {
             ResponseEntity.ok().body(AvengerResponse.from(it))
