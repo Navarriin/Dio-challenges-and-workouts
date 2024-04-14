@@ -46,7 +46,7 @@ class AvengerResource(
        }
 
     @PutMapping("{id}")
-    fun updateHero(@PathVariable("id") id: Long, @RequestBody body: AvengerRequest): ResponseEntity<AvengerResponse> =
+    fun updateHero(@PathVariable("id") id: Long, @Valid @RequestBody body: AvengerRequest): ResponseEntity<AvengerResponse> =
         repository.getHero(id)?.let {
             AvengerRequest.to(it.id, body).apply {
                 repository.updateHero(this)
@@ -54,7 +54,6 @@ class AvengerResource(
                 ResponseEntity.accepted().body(AvengerResponse.from(hero))
             }
         } ?: ResponseEntity.notFound().build()
-
 
     @DeleteMapping("{id}")
     fun deleteHero(@PathVariable("id") id: Long): ResponseEntity<Void> =
