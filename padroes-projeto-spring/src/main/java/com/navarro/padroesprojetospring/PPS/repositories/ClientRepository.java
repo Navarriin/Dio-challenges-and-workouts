@@ -1,6 +1,6 @@
-package com.navarro.padroesprojetospring.repositories;
+package com.navarro.padroesprojetospring.PPS.repositories;
 
-import com.navarro.padroesprojetospring.models.Client;
+import com.navarro.padroesprojetospring.PPS.models.Client;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

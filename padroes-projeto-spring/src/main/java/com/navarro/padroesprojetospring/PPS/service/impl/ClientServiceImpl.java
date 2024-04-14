@@ -1,14 +1,14 @@
-package com.navarro.padroesprojetospring.service.impl;
+package com.navarro.padroesprojetospring.PPS.service.impl;
 
-import com.navarro.padroesprojetospring.exceptions.NotFoundException;
-import com.navarro.padroesprojetospring.models.Address;
-import com.navarro.padroesprojetospring.models.Client;
-import com.navarro.padroesprojetospring.models.dtos.ClientDTO;
-import com.navarro.padroesprojetospring.models.dtos.mapper.ClientMapper;
-import com.navarro.padroesprojetospring.repositories.AddressRepository;
-import com.navarro.padroesprojetospring.repositories.ClientRepository;
-import com.navarro.padroesprojetospring.service.ClientService;
-import com.navarro.padroesprojetospring.service.ViaCepService;
+import com.navarro.padroesprojetospring.PPS.exceptions.NotFoundException;
+import com.navarro.padroesprojetospring.PPS.models.Address;
+import com.navarro.padroesprojetospring.PPS.models.Client;
+import com.navarro.padroesprojetospring.PPS.models.dtos.ClientDTO;
+import com.navarro.padroesprojetospring.PPS.models.dtos.mapper.ClientMapper;
+import com.navarro.padroesprojetospring.PPS.repositories.AddressRepository;
+import com.navarro.padroesprojetospring.PPS.repositories.ClientRepository;
+import com.navarro.padroesprojetospring.PPS.service.ClientService;
+import com.navarro.padroesprojetospring.PPS.service.ViaCepService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

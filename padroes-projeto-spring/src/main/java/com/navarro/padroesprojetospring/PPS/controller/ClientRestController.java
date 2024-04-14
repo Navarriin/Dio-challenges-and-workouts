@@ -1,9 +1,8 @@
-package com.navarro.padroesprojetospring.controller;
+package com.navarro.padroesprojetospring.PPS.controller;
 
-import com.navarro.padroesprojetospring.models.dtos.ClientDTO;
-import com.navarro.padroesprojetospring.service.ClientService;
+import com.navarro.padroesprojetospring.PPS.models.dtos.ClientDTO;
+import com.navarro.padroesprojetospring.PPS.service.ClientService;
 import jakarta.transaction.Transactional;
-import org.apache.coyote.Response;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

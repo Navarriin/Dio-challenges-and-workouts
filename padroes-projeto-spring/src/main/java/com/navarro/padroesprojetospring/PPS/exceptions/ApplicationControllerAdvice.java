@@ -1,4 +1,4 @@
-package com.navarro.padroesprojetospring.exceptions;
+package com.navarro.padroesprojetospring.PPS.exceptions;
 
 import feign.FeignException;
 import org.springframework.http.HttpStatus;

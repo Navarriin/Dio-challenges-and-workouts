@@ -1,4 +1,4 @@
-package com.navarro.padroesprojetospring.models;
+package com.navarro.padroesprojetospring.PPS.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

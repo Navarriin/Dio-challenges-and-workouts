@@ -1,6 +1,6 @@
-package com.navarro.padroesprojetospring.service;
+package com.navarro.padroesprojetospring.PPS.service;
 
-import com.navarro.padroesprojetospring.models.dtos.ClientDTO;
+import com.navarro.padroesprojetospring.PPS.models.dtos.ClientDTO;
 
 import java.util.List;
 

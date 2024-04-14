@@ -1,6 +1,6 @@
-package com.navarro.padroesprojetospring.service;
+package com.navarro.padroesprojetospring.PPS.service;
 
-import com.navarro.padroesprojetospring.models.Address;
+import com.navarro.padroesprojetospring.PPS.models.Address;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;

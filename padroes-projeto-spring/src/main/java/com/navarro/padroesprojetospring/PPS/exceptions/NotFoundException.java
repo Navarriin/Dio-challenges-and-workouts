@@ -1,4 +1,4 @@
-package com.navarro.padroesprojetospring.exceptions;
+package com.navarro.padroesprojetospring.PPS.exceptions;
 
 public class NotFoundException extends RuntimeException{
 

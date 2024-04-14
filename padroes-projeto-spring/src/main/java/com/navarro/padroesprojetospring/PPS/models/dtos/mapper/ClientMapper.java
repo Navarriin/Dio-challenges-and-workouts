@@ -1,7 +1,7 @@
-package com.navarro.padroesprojetospring.models.dtos.mapper;
+package com.navarro.padroesprojetospring.PPS.models.dtos.mapper;
 
-import com.navarro.padroesprojetospring.models.Client;
-import com.navarro.padroesprojetospring.models.dtos.ClientDTO;
+import com.navarro.padroesprojetospring.PPS.models.Client;
+import com.navarro.padroesprojetospring.PPS.models.dtos.ClientDTO;
 import org.springframework.stereotype.Component;
 
 import java.util.Objects;

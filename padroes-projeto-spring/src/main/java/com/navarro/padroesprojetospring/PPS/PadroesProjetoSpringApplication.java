@@ -1,4 +1,4 @@
-package com.navarro.padroesprojetospring;
+package com.navarro.padroesprojetospring.PPS;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

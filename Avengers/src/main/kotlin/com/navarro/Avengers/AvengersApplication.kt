@@ -1,4 +1,4 @@
-package com.navarro.Avengers
+package com.navarro.avengers
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
