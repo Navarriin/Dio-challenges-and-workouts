@@ -1,8 +1,8 @@
 # RELATÓRIO DE IMPLEMENTAÇÃO DE SERVIÇOS AWS
 
-Data: 21/04/2024
-Empresa: Abstergo Industries
-Responsável: Gabriel Navarro
+Data: 21/04/2024   
+Empresa: Abstergo Industries   
+Responsável: Gabriel Navarro   
 
 ## Introdução
 
